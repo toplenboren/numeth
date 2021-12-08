@@ -144,7 +144,6 @@ const solveSimpleIteration = (f, phi, eps, a) => {
 
 const FUNC = (x) => (Math.sin(x) + 0.2) - (2 * x * x)
 const FUNC_D1 = (x) => Math.cos(x) - (4 * x) // First derivative of the function
-const FUNC_D2 = (x) => Math.sin(x) - 4
 const FUNC_PHI = (x) => x - ( FUNC(x) / FUNC_D1(x) )
 const EPS = 0.0000005
 
