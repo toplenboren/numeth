@@ -144,6 +144,7 @@ const solveSimpleIteration = (f, phi, eps, a) => {
 
 const FUNC = (x) => (Math.sin(x) + 0.2) - (2 * x * x)
 const FUNC_D1 = (x) => Math.cos(x) - (4 * x) // First derivative of the function
+const FUNC_D2 = (x) => Math.sin(x) - 4
 const FUNC_PHI = (x) => x - ( FUNC(x) / FUNC_D1(x) )
 const EPS = 0.0000005
 
@@ -152,8 +153,8 @@ const B = 0.65
 
 const solutions = {
 	'1. Метод половиного деления': solveBinary(FUNC, EPS, A, B),
-	'2. Метод Ньютона': solveNewton(FUNC, FUNC_D1, EPS, A),
-	'3. Модифицированный метод Ньютона': solveNewtonModified(FUNC, FUNC_D1, EPS, A),
+	'2. Метод Ньютона': solveNewton(FUNC, FUNC_D1, EPS, B),
+	'3. Модифицированный метод Ньютона': solveNewtonModified(FUNC, FUNC_D1, EPS, B),
 	'4. Метод хорд': solveChord(FUNC, EPS, A, B),
 	'5. Метод подвижных хорд': solveMovableChord(FUNC, EPS, A, B),
 	'6. Метод простой итерации': solveSimpleIteration(FUNC, FUNC_PHI, EPS, A, B),
