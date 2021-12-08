@@ -71,7 +71,7 @@
 ## Обоснования:
 
 - обосновать выбор отрезка [a, b]:
-> Был выбран отрезок 0.6 - 0.65 графическим методом (нарисовал через Desmos: https://www.desmos.com/calculator/xulhrh14it?lang=ru)
+> Был выбран отрезок 0.6 - 0.65 графическим методом ([нарисовал через Desmos](https://www.desmos.com/calculator/xulhrh14it?lang=ru))
 > 
 > Проверим: f(left)*f(right) < 0 = -0.001777377322689592 < 0
 
